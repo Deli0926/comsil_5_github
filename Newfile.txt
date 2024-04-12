@@ -1,1 +1,1 @@
-Hi, It's the first file.
+Hi, This is the first file.
