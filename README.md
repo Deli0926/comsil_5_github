@@ -13,6 +13,7 @@
 - Compiler: MSVC / Visual Studio Code 1.101.0
 - Database Connectivity: MsSQL C API
 - MySQL Connector C 6.1 사용 (다운로드 필수)
+- x64 Native Tools Command Prompt for VS 2022 사용
 
 ## Code 설명
 코드는 크게 displayMenu(), executeQuery(), main()으로 구성되어 있다.
