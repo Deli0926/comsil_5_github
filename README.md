@@ -40,18 +40,25 @@
    code .
    ```
 5. vscode에 접속이 되는데, 여기에서 main.cpp가 위치한 디렉토리로 이동한다.
-6. 해당 디렉토리 내에서 아래의 명령어를 입력한다.
+6. mysql -u root -p를 입력한다.
+7. 비밀번호를 입력한다. (비밀번호 = 1234)
+8. 아래 명령어를 차례대로 입력한다.
+   ```
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+   FLUSH PRIVILEGES;
+   ```
+9. 8까지 끝난 이후 아래의 명령어를 입력한다.
    - 명령어가 실행이 안되는 경우에는 파일의 경로를 잘 확인하여 수정할 필요가 있다.
    ```
    cl.exe /EHsc /I"C:\Program Files\MySQL\MySQL Connector C 6.1\include" main.cpp /link /LIBPATH:"C:\Program Files\MySQL\MySQL Connector C 6.1\lib" libmysql.lib
    ```
-7. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
+10. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
    ```
    ./main.exe
    ```
 
 ## Query 테스트 방법
-main.exe를 실행시키면 아래와 같은 interface가 나타난다.
+main.exe를 실행시키면 시작 Interface가 나타난다.
 사용자는 0 ~ 7까지의 입력을 통해 쿼리문의 결과 확인 및 프로그램 종료 등의 동작을 지시할 수 있다.
 - **0**: 프로그램 종료
 - **1 ~ 7**: 쿼리문 실행 및 결과 확인
