@@ -7,7 +7,7 @@
 
 ## 실행 환경
 - OS: Windows11
-- Database: MySQL 8.0 or later
+- Database: MySQL 8.0.42
 - Design Tool: MySQL Workbench
 - Programming Language: C++
 - Compiler: MSVC / Visual Studio Code 1.101.0
