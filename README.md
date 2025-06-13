@@ -35,22 +35,17 @@
 2. 실행 중인 서버에 접속하여 schema.sql, sample_data.sql을 차례대로 실행시킨다.
    - 이때 SCHEMAS에 store를 생성하고, 더블 클릭하여 해당 스키마를 기본 DB로 설정해야 한다.
    - 필요한 경우에 schema.sql의 맨앞에 있는 drop 부분을 주석처리해야 한다.
-4. vscode에 접속하여 main.cpp가 위치한 디렉토리로 이동한다.
-5. MSVC를 이용하기 위해서는 Visual Studio Build Tools를 이용해야 한다. 아래의 명령어 중 하나를 입력한다.
-   - PowerShell을 사용하는 경우
+3. Developer Command Prompt for VS 2022를 실행시키고 아래 명령어를 입력한다.
    ```
-   & "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+   code .
    ```
-   - CMD를 사용하는 경우 (일반적으로 이것으로 보임)
-   ```
-   call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
-   ```
-7. 해당 디렉토리 내에서 아래의 명령어를 입력한다.
+5. vscode에 접속이 되는데, 여기에서 main.cpp가 위치한 디렉토리로 이동한다.
+6. 해당 디렉토리 내에서 아래의 명령어를 입력한다.
    - 명령어가 실행이 안되는 경우에는 파일의 경로를 잘 확인하여 수정할 필요가 있다.
    ```
    cl.exe /EHsc /I"C:\Program Files\MySQL\MySQL Connector C 6.1\include" main.cpp /link /LIBPATH:"C:\Program Files\MySQL\MySQL Connector C 6.1\lib" libmysql.lib
    ```
-9. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
+7. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
    ```
    ./main.exe
    ```
