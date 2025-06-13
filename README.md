@@ -32,12 +32,14 @@
 아래의 과정에 따라 main.cpp를 실행시킨다.
 1. MySQL 서버를 실행시킨다. (server = 'localhost', user = 'root', password = '1234', database = 'store')
 2. 실행 중인 서버에 접속하여 schema.sql, sample_data.sql을 차례대로 실행시킨다.
-3. vscode에 접속하여 main.cpp가 위치한 디렉토리로 이동한다.
-4. 해당 디렉토리 내에서 아래의 명령어를 입력한다.
+   - 이때 SCHEMAS에 store를 생성하고, 더블 클릭하여 해당 스키마를 기본 DB로 설정해야 한다.
+   - 필요한 경우에 schema.sql의 맨앞에 있는 drop 부분을 주석처리해야 한다.
+4. vscode에 접속하여 main.cpp가 위치한 디렉토리로 이동한다.
+5. 해당 디렉토리 내에서 아래의 명령어를 입력한다.
    ```
    cl.exe /EHsc /I"C:\Program Files\MySQL\MySQL Connector C 6.1\include" main.cpp /link /LIBPATH:"C:\Program Files\MySQL\MySQL Connector C 6.1\lib" libmysql.lib
    ```
-5. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
+6. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
    ```
    ./main.exe
    ```
