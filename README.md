@@ -43,7 +43,7 @@
 5. vscode에 접속이 되는데, 여기에서 main.cpp가 위치한 디렉토리로 이동한다.
 6. `mysql -u root -p`를 입력한다.
 7. 비밀번호를 입력한다. (비밀번호 = 1234)
-8. 아래 명령어를 차례대로 입력한다.
+8. 아래 명령어를 차례대로 입력하고 `exit`한다.
    ```
    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
    FLUSH PRIVILEGES;
