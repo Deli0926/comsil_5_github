@@ -2,8 +2,8 @@
 **20201444 김민서**
 
 ## 관련 파일
-source file: main.cpp
-sql file: schema.sql, sample_data.sql
+- source file: main.cpp
+- sql file: schema.sql, sample_data.sql
 
 ## 실행 환경
 - OS: Windows11
