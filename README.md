@@ -37,6 +37,10 @@
    ```
    cl.exe /EHsc /I"C:\Program Files\MySQL\MySQL Connector C 6.1\include" main.cpp /link /LIBPATH:"C:\Program Files\MySQL\MySQL Connector C 6.1\lib" libmysql.lib
    ```
+5. ls를 통해 생성된 main.exe를 확인할 수 있다. 해당 파일은 아래의 명령어로 실행시킬 수 있다.
+   ```
+   ./main.exe
+   ```
 
 ## Query 테스트 방법
 main.exe를 실행시키면 아래와 같은 interface가 나타난다.
