@@ -25,6 +25,8 @@
   - 메인 함수로 displayMenu() 이후 사용자의 입력을 받고, 이를 토대로 switch문으로 적절한 작업을 처리하게 한다.
   - 이때 사용자의 선택(1 ~ 7)에 따라 각 case 내에서는 알맞은 쿼리가 지정되어 executeQuery()를 호출한다.
   - 0을 선택하면 프로그램이 종료된다.
+- 기존 코드 변경 사항
+  - #include <mysql/mysql.h> --> #include <mysql.h>
 
 ## 실행 방법
 아래의 과정에 따라 main.cpp를 실행시킨다.
