@@ -38,12 +38,12 @@ sql file: schema.sql, sample_data.sql
 ## Query 테스트 방법
 main.exe를 실행시키면 아래와 같은 interface가 나타난다.
 사용자는 0 ~ 7까지의 입력을 통해 쿼리문의 결과 확인 및 프로그램 종료 등의 동작을 지시할 수 있다.
-0: 프로그램 종료
-1 ~ 7: 쿼리문 실행 및 결과 확인
-    1: which stores currently carry a certain product (by UPC, name, or brand), and how much inventory do they have?
-    2: which products have the highest sales volume in each store over the past month?
-    3: which store has generated the highest overall revenue this quarter?
-    4: which vendor supplies the most products across the chain, and how many total units have been sold?
-    5: which products in each store are below the reorder threshold and need restocking?
-    6: List the top 3 items that loyalty program customers typically purchase with coffee.
-    7: Among franchise-owned stores, which one offers the widest variety of products, and how does that compare to corporate-owned stores?
+- 0: 프로그램 종료
+- 1 ~ 7: 쿼리문 실행 및 결과 확인
+    - 1: which stores currently carry a certain product (by UPC, name, or brand), and how much inventory do they have?
+    - 2: which products have the highest sales volume in each store over the past month?
+    - 3: which store has generated the highest overall revenue this quarter?
+    - 4: which vendor supplies the most products across the chain, and how many total units have been sold?
+    - 5: which products in each store are below the reorder threshold and need restocking?
+    - 6: List the top 3 items that loyalty program customers typically purchase with coffee.
+    - 7: Among franchise-owned stores, which one offers the widest variety of products, and how does that compare to corporate-owned stores?
