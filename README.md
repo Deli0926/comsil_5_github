@@ -35,7 +35,7 @@
 2. 실행 중인 서버에 접속하여 schema.sql, sample_data.sql을 차례대로 실행시킨다.
    - 이때 SCHEMAS에 store를 생성하고, 더블 클릭하여 해당 스키마를 기본 DB로 설정해야 한다.
    - 필요한 경우에 schema.sql의 맨앞에 있는 drop 부분을 주석처리해야 한다.
-3. Developer Command Prompt for VS 2022를 실행시키고 아래 명령어를 입력한다.
+3. x64 Native Tools Command Prompt for VS 2022를 실행시키고 아래 명령어를 입력한다.
    ```
    code .
    ```
